@@ -1,0 +1,19 @@
+services:
+    - type: web
+    name: tg-filestore
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+            - key: API_ID
+        value: YOUR_API_ID
+            - key: API_HASH
+        value: YOUR_API_HASH
+            - key: BOT_TOKEN
+        value: YOUR_BOT_TOKEN
+            - key: MONGO_URL
+        value: YOUR_MONGODB_URL
+            - key: FILE_CHANNEL
+        value: -100123456789
+            - key: ADMINS
+        value: 123456789
